@@ -2,7 +2,7 @@
 import psycopg2
 import boto
 
-connection_string = """dbname='events'
+connection_string = """dbname='TABLE NAME'
 port= 'ENTER REDShIFT PORT NUMBER'
 user='ENTER REDSHIFT USERNAME'
 password='ENTER REDSHIFT PASSWORD'
