@@ -13,7 +13,6 @@ cursor = conn.cursor()
 def get_s3object(bucketname):
 	s3 = boto.connect_s3()
 	bucket = s3.get_bucket(bucketname)
-	#bucket = s3.get_bucket('nixhydra-appannie')
 	bucketList = bucket.list()
 	orderedList = sorted(bucketList, key=lambda k: k.last_modified)
 	o = str(orderedList[-1].name) #last updated object
